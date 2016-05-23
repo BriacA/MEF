@@ -3,14 +3,20 @@
 
 #include <Courbe.h>
 
+// File modification date : 17/05/2016
 
 class Segment : public Courbe
 {
     public:
-        Segment();
-        virtual ~Segment();
+
     protected:
+
     private:
+
+    //Attributes :
+
+    //Operations :
+    void diviserEnNParties(int N) ;
 };
 
 #endif // SEGMENT_H
