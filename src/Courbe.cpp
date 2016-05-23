@@ -1,11 +1,35 @@
 #include "Courbe.h"
+#include "math.h"
 
-Courbe::Courbe()
+
+// File modification date : 17/05/2016
+
+void Courbe::courbe(Point p1, Point p2, Point centre, double angle)
 {
-    //ctor
+    _id = id_inc ;
+    id_inc ++ ;
+
+    _p1 = p1 ;
+    _p2 = p2 ;
+
+    if(centre != NULL)
+    {
+        Arc::arc(Point centre, double angle) ;
+    }
 }
 
-Courbe::~Courbe()
+int Courbe::getId()
 {
-    //dtor
+    return this->id ;
 }
+
+Point Courbe::getPointDebut()
+{
+    return this->p1 ;
+}
+
+Point Courbe::getPointFin()
+{
+    return this->p2 ;
+}
+
