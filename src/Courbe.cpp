@@ -4,7 +4,7 @@
 
 // File modification date : 17/05/2016
 
-void Courbe::courbe(Point p1, Point p2, Point centre, double angle)
+void Courbe::Courbe(Point p1, Point p2, Point centre, double angle)
 {
     _id = id_inc ;
     id_inc ++ ;
@@ -17,6 +17,12 @@ void Courbe::courbe(Point p1, Point p2, Point centre, double angle)
         Arc::arc(Point centre, double angle) ;
     }
 }
+
+void Courbe::~Courbe()
+{
+  //dtor
+}
+
 
 int Courbe::getId()
 {

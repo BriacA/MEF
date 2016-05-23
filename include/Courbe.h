@@ -1,15 +1,17 @@
 #ifndef COURBE_H
 #define COURBE_H
 
-#include <Coutour.h>
+#include <Contour.h>
 
 // File modification date : 17/05/2016
 
-class Courbe : public Coutour
+class Courbe : public Contour
 {
 public:
 
     //Operations :
+    void Courbe() ;
+    void ~Courbe() ;
     int getId() ;
     Point getPointDebut() ;
     Point getPointFin() ;
@@ -19,13 +21,12 @@ protected:
 private:
 
     //Attributes :
-    static id_inc ;
+    static int id_inc ;
     int id ;
     point p1 ;
     point p2 ;
 
     //Operations :
-    void courbe() ;
     abstract double getLongueur() ;
     abstract int diviserTaille(double Taille) ;
     abstract void diviserEnNParties(int N) ;

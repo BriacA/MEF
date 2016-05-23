@@ -19,15 +19,15 @@ Point::~Point()
 
 double Point::getX()
 {
-    return x;
+    return this->x;
 }
 double Point::getY()
 {
-    return y;
+    return this->y;
 }
 int Point::getId()
 {
-    return id;
+    return this->id;
 }
 double Point::distanceA(Point p)
 {
