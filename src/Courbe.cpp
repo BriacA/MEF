@@ -1,11 +1,7 @@
 #include "Courbe.h"
+
 #include "math.h"
-
-
-#include <Point.h>
-
-
-// File modification date : 17/05/2016
+#include "Point.h"
 
 //Courbe::Courbe(Point _p1, Point _p2)
 //{
