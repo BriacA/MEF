@@ -1,27 +1,18 @@
 #include "Segment.h"
 
+#include "Courbe.h"
+
 // File modification date : 17/05/2016
 
 double Segment::getLongueur()
 {
-    double L = p1.distanceA(p2) ;
+    Point _p1 = this->getPointDebut();
+    Point _p2 = this->getPointFin();
+    double L = _p1.distanceA(_p2) ;
     return L ;
 }
 
-int Segment::diviserTaille(double taille)
-{
-// Method to divide the segment :
-//
-//
 
-    double L = p1.distance1(p2) ;
-
-    double N = L/taille ;
-    int entier_N = floor(N) + 1 ;
-    double decimale_N = N - entier_N + 1 ;
-
-    double new_taille = taille - decimale_N/entier_N ;
-}
 
 void Segment::diviserEnNParties(int N)
 {
@@ -33,10 +24,10 @@ void Segment::diviserEnNParties(int N)
 
     for(int i=0 ; i<N ; i++)
     {
-        double taille = p1.distanceA(p2)/N ;
-
-        Segment diviserTaille(taille) ;
-
-        Courbe::courbe(p1, p2, NULL, 0) ;
+//        double taille = getLongueur()/N ;
+//
+//        Segment diviserTaille(taille) ;
+//
+//        Courbe::courbe(p1, p2, NULL, 0) ;
     }
 }

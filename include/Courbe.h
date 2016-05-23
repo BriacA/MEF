@@ -2,19 +2,21 @@
 #define COURBE_H
 
 #include <Contour.h>
-
+#include <Point.h>
 // File modification date : 17/05/2016
 
-class Courbe : public Contour
+class Courbe
 {
 public:
 
     //Operations :
-    void Courbe() ;
-    void ~Courbe() ;
+    Courbe(Point p1, Point p2);
+    ~Courbe() ;
     int getId() ;
     Point getPointDebut() ;
     Point getPointFin() ;
+    virtual  double getLongueur() ;
+    virtual  int diviserTaille(double Taille) ;
 
 protected:
 
@@ -23,13 +25,12 @@ private:
     //Attributes :
     static int id_inc ;
     int id ;
-    point p1 ;
-    point p2 ;
+    Point p1 ;
+    Point p2 ;
 
     //Operations :
-    abstract double getLongueur() ;
-    abstract int diviserTaille(double Taille) ;
-    abstract void diviserEnNParties(int N) ;
+
+    void diviserEnNParties(int N) ;
 
 };
 

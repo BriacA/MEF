@@ -1,7 +1,7 @@
 #ifndef ARC_H
 #define ARC_H
 
-#include <Courbe.h>
+#include "Courbe.h"
 
 // File modification date : 17/05/2016
 
@@ -10,7 +10,7 @@ class Arc : public Courbe
 public:
 
     //Attributes ;
-    void arc(Point centre, double angle) ;
+    Arc(Point p1, Point p2, Point centre) ;
     Point getCentre() ;
     double getAngle() ;
 
@@ -23,7 +23,6 @@ private:
     double angle ;
 
     //Operations :
-    int
     void diviserEnNParties(int N) ;
 };
 

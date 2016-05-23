@@ -1,4 +1,5 @@
 #include "Fonctions.h"
+#include <math.h>
 
 Fonctions::Fonctions()
 {
@@ -38,10 +39,10 @@ double Fonctions::calculAngle(double x, double y)
 
 double Fonctions::getLongueur(Point p1,Point p2)
 {
-    return getLongueur(p1.getX(),p1.getY(),p2.getX(),p2.getY);
+    return getLongueur(p1.getX(),p1.getY(),p2.getX(),p2.getY());
 }
 
-double Fonctions::getLongueur(double x1,y1,x2,y2)
+double Fonctions::getLongueur(double x1, double y1, double x2, double y2)
 {
     return sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
 }
