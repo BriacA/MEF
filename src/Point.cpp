@@ -1,22 +1,15 @@
 #include "Point.h"
-#include <math.h>
 
 int Point::idInc = 0;
 
 Point::Point(double _x, double _y)
 {
     //ctor
-    this->x = _x;
-    this->y = _y;
+    x = _x;
+    y = _y;
 
-    Point::idInc++;
-    this->id = idInc;
-
-}
-
-Point::Point()
-{
-
+    id = idInc;
+    idInc++;
 }
 
 Point::~Point()

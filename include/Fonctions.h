@@ -1,7 +1,6 @@
 #ifndef FONCTIONS_H
 #define FONCTIONS_H
 
-#include "Point.h"
 
 class Fonctions
 {

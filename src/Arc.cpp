@@ -1,21 +1,19 @@
 #include "Arc.h"
 
-#include "Courbe.h"
-
 // File modification date : 17/05/2016
 
-//Arc::Arc(Point p1, Point p2, Point centre)
-//{
-//    Courbe(p1,p2);
-//    this->centre = centre ;
-//}
+void Arc::arc(Point centre, double angle)
+{
+    _centre = centre ;
+    _angle = angle ;
+}
 
-Point Arc::getCentre()
+Point getCentre()
 {
     return this->centre ;
 }
 
-double Arc::getAngle()
+double getAngle()
 {
     return this->angle ;
 }

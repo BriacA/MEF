@@ -8,7 +8,6 @@
 class Segment : public Courbe
 {
     public:
-        double getLongueur();
 
     protected:
 

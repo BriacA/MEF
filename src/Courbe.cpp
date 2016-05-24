@@ -2,21 +2,23 @@
 #include "math.h"
 
 
-#include "Point.h"
-
-
 // File modification date : 17/05/2016
 
-Courbe::Courbe(Point _p1, Point _p2)
+void Courbe::Courbe(Point p1, Point p2, Point centre, double angle)
 {
+    _id = id_inc ;
+    id_inc ++ ;
 
-//    id_inc ++ ;
-//    this->id = Courbe::id_inc;
-    this->p1 = _p1 ;
-    this->p2 = _p2 ;
+    _p1 = p1 ;
+    _p2 = p2 ;
+
+    if(centre != NULL)
+    {
+        Arc::arc(Point centre, double angle) ;
+    }
 }
 
-Courbe::~Courbe()
+void Courbe::~Courbe()
 {
   //dtor
 }
@@ -35,21 +37,5 @@ Point Courbe::getPointDebut()
 Point Courbe::getPointFin()
 {
     return this->p2 ;
-}
-
-int Courbe::diviserTaille(double taille)
-{
-// Method to divide the segment :
-//
-//
-
-    double L = this->p1.distanceA(this->p2);
-
-    double N = L/taille ;
-    int entier_N = floor(N) + 1 ;
-    return entier_N;
-//    double decimale_N = N - entier_N + 1 ;
-//
-//    double new_taille = taille - decimale_N/entier_N ;
 }
 
