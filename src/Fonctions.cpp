@@ -1,5 +1,7 @@
 #include "Fonctions.h"
 
+//Author : Clement ABADIE
+
 Fonctions::Fonctions()
 {
     //ctor

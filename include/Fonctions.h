@@ -1,6 +1,7 @@
 #ifndef FONCTIONS_H
 #define FONCTIONS_H
 
+//Author : Clement ABADIE
 
 class Fonctions
 {

@@ -1,6 +1,8 @@
 #ifndef POINT_H
 #define POINT_H
 
+//Author : Clement ABADIE
+
 class Point
 {
 public:
