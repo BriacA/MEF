@@ -2,24 +2,24 @@
 #include "math.h"
 
 
-#include <Point.h>
+#include "Point.h"
 
 
 // File modification date : 17/05/2016
 
-//Courbe::Courbe(Point _p1, Point _p2)
-//{
-//
-////    id_inc ++ ;
-////    this->id = Courbe::id_inc;
-//    this->p1 = _p1 ;
-//    this->p2 = _p2 ;
-//}
+Courbe::Courbe(Point _p1, Point _p2)
+{
 
-//Courbe::~Courbe()
-//{
-//  //dtor
-//}
+//    id_inc ++ ;
+//    this->id = Courbe::id_inc;
+    this->p1 = _p1 ;
+    this->p2 = _p2 ;
+}
+
+Courbe::~Courbe()
+{
+  //dtor
+}
 
 
 int Courbe::getId()

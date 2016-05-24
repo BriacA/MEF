@@ -10,7 +10,7 @@ class Courbe
 public:
 
     //Operations :
-    Courbe(Point _p1, Point _p2);
+    Courbe(Point p1, Point p2);
     ~Courbe() ;
     int getId() ;
     Point getPointDebut() ;
