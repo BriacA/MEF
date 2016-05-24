@@ -1,7 +1,5 @@
 #include <iostream>
-
-#include <FichierIO.h>
-#include "Contour.h"
+#include "FichierIO.h"
 
 using namespace std;
 
@@ -9,6 +7,6 @@ int main()
 {
 
     cout << "Hello world!" << endl;
-    Contour contour = FichierIO::loadFile();
+//    FichierIO.loadFile();
     return 0;
 }

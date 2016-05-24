@@ -2,7 +2,6 @@
 #include<iostream>
 
 #include <fstream>
-#include "Contour.h"
 
 using namespace std;
 
@@ -16,9 +15,8 @@ FichierIO::~FichierIO()
     //dtor
 }
 
-Contour FichierIO::loadFile()
+Contour loadFile()
 {
-    Contour contour;
     ifstream fichier("test.txt", ios::in);  // on ouvre le fichier en lecture
     if(fichier)  // si l'ouverture a réussi
     {
@@ -29,5 +27,4 @@ Contour FichierIO::loadFile()
     {
         cerr << "Impossible d'ouvrir le fichier !" << endl;
     }
-    return contour;
 }

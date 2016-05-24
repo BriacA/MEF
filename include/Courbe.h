@@ -8,10 +8,10 @@
 class Courbe
 {
 public:
-    //Operations :*
-    Courbe();
+
+    //Operations :
     Courbe(Point _p1, Point _p2);
-    ~Courbe();
+    ~Courbe() ;
     int getId() ;
     Point getPointDebut() ;
     Point getPointFin() ;
