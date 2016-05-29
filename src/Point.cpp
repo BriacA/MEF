@@ -1,16 +1,23 @@
-#include "Point.h"
 
 //Author : Clement ABADIE
 
+#include "Point.h"
+
+
 int Point::idInc = 0;
 
-Point::Point(double _x, double _y)
+Point::Point()
+{
+
+}
+
+Point::Point(double x, double y)
 {
     //ctor
-    this->x = _x;
-    this->y = _y;
+    this->x = x;
+    this->y = y;
 
-    this->id = idInc;
+    this->id = this->idInc;
     idInc++;
 }
 
@@ -23,15 +30,19 @@ double Point::getX()
 {
     return this->x;
 }
+
 double Point::getY()
 {
     return this->y;
 }
+
 int Point::getId()
 {
     return this->id;
 }
+
 double Point::distanceA(Point p)
 {
-    return sqrt((p.getX()-this->x)*(p.getX()-this->x)+(p.getY()-this->y)*(p.getY()-this->y));
+    //return sqrt((p.getX()-this->x)*(p.getX()-this->x)+(p.getY()-this->y)*(p.getY()-this->y));
+    return 0;
 }

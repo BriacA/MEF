@@ -1,7 +1,10 @@
+
+//Author : Clement ABADIE
+
 #ifndef FONCTIONS_H
 #define FONCTIONS_H
 
-//Author : Clement ABADIE
+#include "Point.h"
 
 class Fonctions
 {

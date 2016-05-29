@@ -1,12 +1,14 @@
-#ifndef POINT_H
-#define POINT_H
 
 //Author : Clement ABADIE
+
+#ifndef POINT_H
+#define POINT_H
 
 class Point
 {
 public:
-    Point(double _x, double _y);
+    Point();
+    Point(double x, double y);
     virtual ~Point();
 
     double getX();

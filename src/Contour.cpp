@@ -1,4 +1,8 @@
+
+//Author : Clement ABADIE
+
 #include "Contour.h"
+
 
 Contour::Contour()
 {
@@ -9,3 +13,24 @@ Contour::~Contour()
 {
     //dtor
 }
+
+
+    void separer()
+    {
+
+    }
+
+    void trier()
+    {
+
+    }
+
+    void verifierSens()
+    {
+
+    }
+
+    void boucleMaillage()
+    {
+
+    }
